@@ -1,0 +1,32 @@
+{
+  "name": "website-constructor",
+  "version": "1.0.0",
+  "description": "Pure JS website constructor",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artakharutyunyan/website-constructor.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "website",
+    "constructor"
+  ],
+  "author": "Artak Harutyunyan <artak_harutyunyan@mail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artakharutyunyan/website-constructor/issues"
+  },
+  "homepage": "https://github.com/artakharutyunyan/website-constructor#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.4.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
