@@ -1,11 +1,39 @@
+import image from "./assets/matrix.png";
+import {
+  TextBlock,
+  TitleBlock,
+  ImageBlock,
+  TextColumnsBlock,
+} from "./classes/blocks";
+
+const text = `
+All my projects are here: <a href="https://github.com/artakharutyunyan" target="_blank">Artak Harutyunyan</a>. You will find very interesting projects: Chess, Tetris, Star Match Game etc.. Come and join!
+`;
+
 export const model = [
-  {type: 'title', value: 'Test Title', options: {}},
-  {type: 'text', value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur error expedit', options: {}},
-  {type: 'textColumns', value: [
-    '1 text',
-    '2 text',
-    '3 text',
-    '4 text',
-  ], options: {}},
-  {type: 'title', value: 'Test Title', options: {}},
-]
+  new TitleBlock("Website constructor on pure JavaScript!", {
+    tag: "h2",
+    styles:
+      "background: linear-gradient(to right, #ff0099, #493240);color: #fff;padding: 1.5rem;text-align: center;",
+  }),
+  new ImageBlock(image, {
+    styles: "padding: 2rem 0;display: flex;justify-content: center;",
+    alt: "matrix",
+    imageStyles: "width: 500px; height: auto;",
+  }),
+  new TextColumnsBlock(
+    [
+      "Application on pure JavaScript, without any library",
+      "Based on SOLID and OOP principles ",
+      "JavaScript is simple and interesting.",
+    ],
+    {
+      styles:
+        "padding: 2rem 0; color: #fff;background: linear-gradient(to bottom, #8e2de2, #4a00e0);font-weight: bold;",
+    }
+  ),
+  new TextBlock(text, {
+    styles:
+      "background: linear-gradient(to left, #f2994a, #f2c94c);font-weight: bold;padding: 1rem;",
+  }),
+];
