@@ -1,6 +1,6 @@
 # website-constructor
 
-Website constructor
+Website constructor on pure JavaScript
 
 To run constructor
 
